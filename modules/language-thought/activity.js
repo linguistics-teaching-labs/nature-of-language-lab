@@ -9,7 +9,7 @@ function renderCase() {
   $("#finding-text").textContent = active.finding;
   $("#design").textContent = active.design;
   $("#caution").textContent = active.caution;
-  $("#claim-ladder").innerHTML = claimLevels.map((level, index) => `<label class="claim-rung"><input type="radio" name="claim-level" value="${level.id}" class="sr-only"><span>${index + 1}</span><p><strong>${level.label}</strong><br>${level.text}</p></label>`).join("");
+  $("#claim-ladder").innerHTML = claimLevels.map((level, index) => `<label class="claim-rung"><input type="radio" name="claim-level" value="${level.id}"><span>${index + 1}</span><p><strong>${level.label}</strong><br>${level.text}</p></label>`).join("");
   $("#alternative-options").innerHTML = optionCards(active.alternatives, { name: "alternative", type: "checkbox" });
   $("#claim-feedback").hidden = true;
   updateConfidence();

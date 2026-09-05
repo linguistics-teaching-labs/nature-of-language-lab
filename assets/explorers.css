@@ -66,10 +66,12 @@
 .evidence-status.limited { color: #74401f; background: var(--orange-soft); }
 .evidence-status.absent { color: #5f6f7b; background: #e7edf0; }
 .claim-ladder { display: grid; gap: .6rem; margin: 1rem 0; }
-.claim-rung { display: grid; grid-template-columns: 2rem 1fr; align-items: start; gap: .7rem; padding: .75rem; border: 1px solid var(--line); border-radius: 9px; background: #fbfdfe; }
+.claim-rung { position: relative; display: grid; grid-template-columns: 2rem minmax(0, 1fr); align-items: start; gap: .7rem; padding: .75rem; border: 1px solid var(--line); border-radius: 9px; background: #fbfdfe; cursor: pointer; }
+.claim-rung input { position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0; pointer-events: none; }
 .claim-rung span { display: grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 50%; color: #fff; background: var(--teal); font-size: .78rem; font-weight: 850; }
 .claim-rung p { margin: 0; color: var(--ink-soft); font-size: .88rem; }
 .claim-rung:has(input:checked) { border-color: var(--teal); background: #eff9f7; box-shadow: inset 0 0 0 1px var(--teal); }
+.claim-rung:has(input:focus-visible) { outline: 3px solid rgba(23, 107, 135, .28); outline-offset: 2px; }
 .token-line { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; min-height: 72px; padding: 1rem; border: 1px dashed var(--line-dark); border-radius: 10px; background: #fbfdfe; }
 .word-token { padding: .35rem .58rem; border-radius: 6px; color: #17485c; background: #e5f2f6; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .88rem; }
 .word-token.changed { color: #713516; background: var(--orange-soft); box-shadow: inset 0 -2px 0 var(--orange); }

@@ -47,10 +47,12 @@ function createModuleCard(module) {
     meta.append(span);
   }
 
-  const status = document.createElement("span");
-  status.className = `module-status ${module.status}`;
-  status.textContent = module.status === "available" ? "Available now" : "Proposed";
-  meta.append(status);
+  if (module.status === "proposed") {
+    const status = document.createElement("span");
+    status.className = "module-status proposed";
+    status.textContent = "Proposed";
+    meta.append(status);
+  }
 
   const heading = document.createElement("h2");
   heading.textContent = module.title;
