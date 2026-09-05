@@ -8,6 +8,12 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const pages = [
   "index.html",
   "modules/language-change/index.html",
+  "modules/animal-communication/index.html",
+  "modules/language-thought/index.html",
+  "modules/language-comparison/index.html",
+  "modules/spelling-reform/index.html",
+  "modules/english-variation/index.html",
+  "modules/language-gender/index.html",
   "modules/digital-tone/index.html",
   "modules/claim-evidence/index.html"
 ];
@@ -41,10 +47,10 @@ test("all local stylesheet and script references resolve", () => {
 });
 
 test("activity selectors resolve to elements in the module page", () => {
-  for (const module of ["language-change", "digital-tone", "claim-evidence"]) {
+  for (const module of ["language-change", "animal-communication", "language-thought", "language-comparison", "spelling-reform", "english-variation", "language-gender", "digital-tone", "claim-evidence"]) {
     const script = readFileSync(resolve(root, `modules/${module}/activity.js`), "utf8");
     const content = html(`modules/${module}/index.html`);
-    const selectors = [...script.matchAll(/querySelector\("#([^"]+)"\)/g)].map(match => match[1]);
+    const selectors = [...script.matchAll(/(?:querySelector|\$)\("#([^"]+)"\)/g)].map(match => match[1]);
     for (const selector of new Set(selectors)) {
       assert.match(content, new RegExp(`id="${selector}"`), `${module} is missing #${selector}`);
     }

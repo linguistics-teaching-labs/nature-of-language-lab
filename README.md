@@ -21,38 +21,19 @@ The intended-use statement describes the scope of the activities; it does not na
 
 ## Module catalog
 
-### Available modules
+All nine modules are available:
 
-#### Language Change: Evolution or Decay?
+- **[Language Change: Evolution or Decay?](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/language-change/)** — test deterioration claims, inspect patterned change, and model social diffusion.
+- **[Animal Communication Evidence Lab](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/animal-communication/)** — compare evidence for design features across communication systems.
+- **[Language and Thought: How Strong Is the Claim?](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/language-thought/)** — distinguish association, context-bound influence, and linguistic determinism.
+- **[How Languages Package Meaning](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/language-comparison/)** — compare structural strategies without ranking languages.
+- **[Spelling Reform Sandbox](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/spelling-reform/)** — simulate reform proposals and evaluate dialect, reading, and transition trade-offs.
+- **[Dialect Rule Detective](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/english-variation/)** — infer rules in English varieties and identify standard-language ideology.
+- **[Form, Function, and Gender Stereotypes](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/language-gender/)** — separate multifunctional forms from gendered listener expectations.
+- **[Digital Tone and Context Explorer](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/digital-tone/)** — compare context-dependent interpretations of digital cues.
+- **[Claim and Evidence Inspector](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/claim-evidence/)** — match course claims with measures, comparisons, alternatives, and warranted conclusions.
 
-A five-step guided activity in which students:
-
-- identify what evidence a claim of linguistic deterioration would require;
-- compare systematic sound, semantic, grammatical, and pragmatic patterns;
-- manipulate a transparent social-network diffusion model;
-- distinguish language change, variation, endangerment, prescriptive judgment, and insufficient evidence; and
-- construct a claim-evidence reasoning map without generating assignment prose.
-
-The module uses a fictional innovation and synthetic network. It does not collect student writing, messages, or personal information.
-
-#### Digital Tone and Context Explorer
-
-A four-step activity for manipulating wording, punctuation, emoji, relationship, and channel; comparing context-dependent readings; selecting an appropriate research design; and calibrating a conclusion. Its visible percentages are transparent teaching weights, not empirical predictions.
-
-#### Claim and Evidence Inspector
-
-A five-step activity for unpacking the scope and causal language of course claims, defining a test, matching evidence, considering alternatives, and choosing a warranted conclusion. Its confidence meter is explicitly a reasoning heuristic rather than a statistical result.
-
-### Proposed modules
-
-- **Animal Communication Evidence Lab** — compare design features across communication systems.
-- **Language and Thought: How Strong Is the Claim?** — distinguish linguistic influence from linguistic determinism.
-- **How Languages Package Meaning** — compare structural strategies without ranking languages.
-- **Spelling Reform Sandbox** — evaluate orthographic reforms and their trade-offs.
-- **Dialect Rule Detective** — analyze patterned variation and social evaluation.
-- **Form, Function, and Gender Stereotypes** — separate linguistic form, contextual function, and listener expectations.
-
-These cards describe the development roadmap. They are labeled **Proposed** on the public catalog and do not link to unfinished activities.
+Every activity uses synthetic or compact teaching data, runs entirely in the browser, and does not collect student responses.
 
 ## Run locally
 

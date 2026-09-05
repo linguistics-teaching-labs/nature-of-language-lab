@@ -18,10 +18,10 @@ export const modules = [
     title: "Animal Communication Evidence Lab",
     topic: "Communication systems",
     category: "communication-cognition",
-    status: "proposed",
+    status: "available",
     description: "Compare human language and animal signaling through design features, then judge what the evidence can and cannot establish.",
     concepts: ["Design features", "Signaling", "Comparison"],
-    href: null
+    href: "modules/animal-communication/"
   },
   {
     id: "language-thought",
@@ -30,10 +30,10 @@ export const modules = [
     title: "Language and Thought: How Strong Is the Claim?",
     topic: "Language and cognition",
     category: "communication-cognition",
-    status: "proposed",
+    status: "available",
     description: "Match claims about color, time, and grammatical categories to evidence, separating linguistic influence from linguistic determinism.",
     concepts: ["Relativity", "Categorization", "Causality"],
-    href: null
+    href: "modules/language-thought/"
   },
   {
     id: "language-comparison",
@@ -42,10 +42,10 @@ export const modules = [
     title: "How Languages Package Meaning",
     topic: "Structure and complexity",
     category: "structure-diversity",
-    status: "proposed",
+    status: "available",
     description: "Compare how languages organize sounds, words, and sentences without ranking one system as inherently better.",
     concepts: ["Typology", "Complexity", "Expression"],
-    href: null
+    href: "modules/language-comparison/"
   },
   {
     id: "spelling-reform",
@@ -54,10 +54,10 @@ export const modules = [
     title: "Spelling Reform Sandbox",
     topic: "Writing systems",
     category: "change-society",
-    status: "proposed",
+    status: "available",
     description: "Test spelling reforms against pronunciation coverage, dialect fairness, readability, morphology, and transition costs.",
     concepts: ["Orthography", "Dialect fairness", "Trade-offs"],
-    href: null
+    href: "modules/spelling-reform/"
   },
   {
     id: "english-variation",
@@ -66,10 +66,10 @@ export const modules = [
     title: "Dialect Rule Detective",
     topic: "Variation and ideology",
     category: "variation-identity",
-    status: "proposed",
+    status: "available",
     description: "Identify rules in stigmatized varieties and separate linguistic description from social judgments about accents, dialects, and slang.",
     concepts: ["Variation", "Dialect rules", "Ideology"],
-    href: null
+    href: "modules/english-variation/"
   },
   {
     id: "language-gender",
@@ -78,10 +78,10 @@ export const modules = [
     title: "Form, Function, and Gender Stereotypes",
     topic: "Identity and interpretation",
     category: "variation-identity",
-    status: "proposed",
+    status: "available",
     description: "Interpret the same feature across contexts and examine how expectations about gender shape judgments about speakers.",
     concepts: ["Form/function", "Gender ideology", "Perception"],
-    href: null
+    href: "modules/language-gender/"
   },
   {
     id: "digital-tone",

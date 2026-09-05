@@ -10,7 +10,7 @@ authors:
 repository-code: "https://github.com/linguistics-teaching-labs/nature-of-language-lab"
 url: "https://linguistics-teaching-labs.github.io/nature-of-language-lab/"
 license: MIT
-version: 0.2.0
+version: 0.3.0
 date-released: 2026-09-05
 abstract: "Interactive, evidence-centered activities for critical thinking about language."
 keywords:
