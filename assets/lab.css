@@ -18,6 +18,7 @@
 .lab-guide {
   position: sticky;
   top: 1.5rem;
+  min-width: 0;
   padding: 0.5rem 0;
 }
 
@@ -35,7 +36,9 @@
 
 .lab-guide h1 {
   margin-bottom: 1rem;
-  font-size: clamp(2.3rem, 4vw, 3.8rem);
+  font-size: clamp(1.85rem, 2.5vw, 2.45rem);
+  line-height: 1.08;
+  overflow-wrap: break-word;
 }
 
 .guide-intro {
