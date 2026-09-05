@@ -1,7 +1,7 @@
 import {
   getModulesByCategory,
   moduleCategories
-} from "../modules/catalog.js?v=20260905-1";
+} from "../modules/catalog.js?v=20260905-2";
 
 function buildNavigation(navigation) {
   const root = navigation.dataset.root ?? "./";
@@ -36,11 +36,22 @@ function buildNavigation(navigation) {
     links.className = "browse-links";
 
     for (const module of getModulesByCategory(category.id)) {
-      const link = document.createElement("a");
-      link.href = `${root}${module.href}`;
-      link.textContent = module.title;
-      if (module.id === active) link.setAttribute("aria-current", "page");
-      links.append(link);
+      if (module.status === "available") {
+        const link = document.createElement("a");
+        link.href = `${root}${module.href}`;
+        link.textContent = module.title;
+        if (module.id === active) link.setAttribute("aria-current", "page");
+        links.append(link);
+      } else {
+        const item = document.createElement("span");
+        item.className = "browse-planned";
+        item.textContent = module.title;
+        item.setAttribute("aria-label", `${module.title}, proposed module`);
+        const status = document.createElement("small");
+        status.textContent = "Proposed";
+        item.append(status);
+        links.append(item);
+      }
     }
 
     group.append(heading, links);

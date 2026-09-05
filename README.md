@@ -19,9 +19,9 @@ The intended-use statement describes the scope of the activities; it does not na
 - [Wei Lai](https://github.com/weilaiPhonetics)
 - [Desen Lin](https://github.com/desenlin)
 
-## Available module
+## Module catalog
 
-### Language Change: Evolution or Decay?
+### Available: Language Change: Evolution or Decay?
 
 A five-step guided activity in which students:
 
@@ -32,6 +32,17 @@ A five-step guided activity in which students:
 - construct a claim-evidence reasoning map without generating assignment prose.
 
 The module uses a fictional innovation and synthetic network. It does not collect student writing, messages, or personal information.
+
+### Proposed modules
+
+- **What Counts as Language? Human and Animal Communication** — compare design features across communication systems.
+- **Does Language Shape Thought?** — distinguish linguistic influence from linguistic determinism.
+- **Are Some Languages Better Than Others?** — compare structural strategies without ranking languages.
+- **Should English Spelling Be Reformed?** — evaluate orthographic reforms and their trade-offs.
+- **Dialect, Accent, or “Just Slang”?** — analyze patterned variation and social evaluation.
+- **Language and Gender: Form, Function, and Bias** — separate linguistic form, contextual function, and listener expectations.
+
+These cards describe the development roadmap. They are labeled **Proposed** on the public catalog and do not link to unfinished activities.
 
 ## Run locally
 

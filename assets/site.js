@@ -5,8 +5,8 @@ import {
   moduleCategories,
   modules,
   moduleOrderOptions
-} from "../modules/catalog.js?v=20260905-1";
-import "./module-nav.js?v=20260905-1";
+} from "../modules/catalog.js?v=20260905-2";
+import "./module-nav.js?v=20260905-2";
 
 const grid = document.querySelector("#module-grid");
 const orderSelect = document.querySelector("#module-order");
@@ -29,6 +29,7 @@ function createModuleCard(module) {
   const card = document.createElement("article");
   card.className = "module-card";
   card.dataset.module = module.id;
+  card.dataset.status = module.status;
 
   const number = document.createElement("div");
   number.className = "module-number";
@@ -46,6 +47,11 @@ function createModuleCard(module) {
     meta.append(span);
   }
 
+  const status = document.createElement("span");
+  status.className = `module-status ${module.status}`;
+  status.textContent = module.status === "available" ? "Available now" : "Proposed";
+  meta.append(status);
+
   const heading = document.createElement("h2");
   heading.textContent = module.title;
 
@@ -61,10 +67,17 @@ function createModuleCard(module) {
     concepts.append(item);
   }
 
-  const action = document.createElement("a");
-  action.className = "primary-action";
-  action.href = module.href;
-  action.innerHTML = `Open the lab <span aria-hidden="true">→</span>`;
+  let action;
+  if (module.status === "available") {
+    action = document.createElement("a");
+    action.className = "primary-action";
+    action.href = module.href;
+    action.innerHTML = `Open the lab <span aria-hidden="true">→</span>`;
+  } else {
+    action = document.createElement("span");
+    action.className = "proposed-action";
+    action.textContent = "Proposed module";
+  }
 
   body.append(meta, heading, description, concepts, action);
   card.append(number, body);
@@ -84,6 +97,7 @@ function updateURL() {
 
 function renderModules() {
   const visibleModules = filterModules({ query, category, order });
+  grid.classList.toggle("single-module", visibleModules.length === 1);
   if (visibleModules.length) {
     grid.replaceChildren(...visibleModules.map(createModuleCard));
   } else {
@@ -108,12 +122,17 @@ function renderModules() {
     grid.replaceChildren(empty);
   }
 
+  const availableCount = visibleModules.filter(module => module.status === "available").length;
+  const proposedCount = visibleModules.length - availableCount;
   moduleCount.textContent = visibleModules.length;
-  if (visibleModules.length === modules.length) {
-    moduleCountLabel.textContent = modules.length === 1 ? "standalone activity" : "standalone activities";
-  } else {
-    moduleCountLabel.textContent = `of ${modules.length} ${modules.length === 1 ? "activity" : "activities"}`;
-  }
+  const scope = visibleModules.length === modules.length
+    ? (visibleModules.length === 1 ? "module" : "modules")
+    : `of ${modules.length} modules`;
+  const statusCounts = [
+    availableCount ? `${availableCount} available` : "",
+    proposedCount ? `${proposedCount} proposed` : ""
+  ].filter(Boolean).join(" · ");
+  moduleCountLabel.textContent = `${scope}${statusCounts ? ` · ${statusCounts}` : ""}`;
 }
 
 function updateCategoryButtons() {
@@ -146,7 +165,6 @@ for (const option of [{ id: "", label: "All subjects" }, ...moduleCategories]) {
 orderSelect.value = order;
 searchInput.value = query;
 updateCategoryButtons();
-if (modules.length === 1) grid.classList.add("single-module");
 renderModules();
 
 orderSelect.addEventListener("change", () => {

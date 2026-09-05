@@ -156,6 +156,27 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .browse-links a:hover { color: var(--navy); background: var(--canvas); }
 .browse-links a[aria-current="page"] { color: var(--navy); background: var(--orange-soft); box-shadow: inset 3px 0 0 var(--orange); }
 
+.browse-planned {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.48rem 0.55rem;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  font-weight: 620;
+  line-height: 1.35;
+}
+
+.browse-planned small {
+  flex: 0 0 auto;
+  color: #7a5b47;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .collection-main {
   width: min(1040px, 90vw);
   margin: 0 auto;
@@ -321,6 +342,16 @@ h1, h2, h3 {
 .module-card[data-module="attention"] .module-number { background: #a45128; }
 .module-card[data-module="coreference"] .module-number { background: #5b3c8a; }
 .module-card[data-module="language-change"] .module-number { background: #b45327; }
+.module-card[data-module="animal-communication"] .module-number { background: #2e6171; }
+.module-card[data-module="language-thought"] .module-number { background: #6d4aa1; }
+.module-card[data-module="language-comparison"] .module-number { background: #17695d; }
+.module-card[data-module="spelling-reform"] .module-number { background: #a45128; }
+.module-card[data-module="english-variation"] .module-number { background: #176b87; }
+.module-card[data-module="language-gender"] .module-number { background: #934628; }
+
+.module-card[data-status="proposed"] {
+  box-shadow: 0 10px 28px rgba(16, 42, 67, 0.07);
+}
 
 .module-card-body {
   display: flex;
@@ -339,6 +370,13 @@ h1, h2, h3 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
+.module-status {
+  padding-left: 0.75rem;
+  border-left: 1px solid var(--line-dark);
+}
+
+.module-status.proposed { color: #7a5b47; }
 
 .module-card h2 { margin-bottom: 0.7rem; font-size: clamp(1.3rem, 2vw, 1.65rem); }
 .module-card p { margin: 0; color: var(--ink-soft); font-size: 0.94rem; line-height: 1.55; }
@@ -378,6 +416,18 @@ h1, h2, h3 {
 .module-card .primary-action { margin-top: auto; }
 
 .primary-action:hover { background: var(--blue); }
+
+.proposed-action {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 0.55rem 0.78rem;
+  border: 1px solid var(--line-dark);
+  border-radius: 8px;
+  color: var(--ink-soft);
+  background: #f7fafc;
+  font-size: 0.82rem;
+  font-weight: 750;
+}
 
 .collection-note {
   display: grid;
