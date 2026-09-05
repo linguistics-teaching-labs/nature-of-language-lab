@@ -15,7 +15,11 @@ const pages = [
   "modules/english-variation/index.html",
   "modules/language-gender/index.html",
   "modules/digital-tone/index.html",
-  "modules/claim-evidence/index.html"
+  "modules/claim-evidence/index.html",
+  "modules/speech-sounds/index.html",
+  "modules/word-structure/index.html",
+  "modules/sentence-structure/index.html",
+  "modules/meaning-context/index.html"
 ];
 
 function html(path) {
@@ -47,7 +51,7 @@ test("all local stylesheet and script references resolve", () => {
 });
 
 test("activity selectors resolve to elements in the module page", () => {
-  for (const module of ["language-change", "animal-communication", "language-thought", "language-comparison", "spelling-reform", "english-variation", "language-gender", "digital-tone", "claim-evidence"]) {
+  for (const module of ["language-change", "animal-communication", "language-thought", "language-comparison", "spelling-reform", "english-variation", "language-gender", "digital-tone", "claim-evidence", "speech-sounds", "word-structure", "sentence-structure", "meaning-context"]) {
     const script = readFileSync(resolve(root, `modules/${module}/activity.js`), "utf8");
     const content = html(`modules/${module}/index.html`);
     const selectors = [...script.matchAll(/(?:querySelector|\$)\("#([^"]+)"\)/g)].map(match => match[1]);

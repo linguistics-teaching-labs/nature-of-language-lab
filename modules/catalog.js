@@ -106,6 +106,54 @@ export const modules = [
     description: "Build and stress-test linguistic arguments by matching claims with measures, comparisons, alternatives, and warranted conclusions.",
     concepts: ["Claims", "Evidence", "Inference"],
     href: "modules/claim-evidence/"
+  },
+  {
+    id: "speech-sounds",
+    sequence: 10,
+    shortTitle: "Speech sounds",
+    title: "Speech Sounds: Find the Pattern",
+    topic: "Phonetics and phonology",
+    category: "structure-diversity",
+    status: "available",
+    description: "Match IPA and articulation clues, identify sound contrasts, and infer which sequences a language permits.",
+    concepts: ["Phonetics", "Phonology"],
+    href: "modules/speech-sounds/"
+  },
+  {
+    id: "word-structure",
+    sequence: 11,
+    shortTitle: "Word structure",
+    title: "Word Structure: Build the Rule",
+    topic: "Morphology and productivity",
+    category: "structure-diversity",
+    status: "available",
+    description: "Segment unfamiliar words into morphemes, infer a harmony rule, and extend productive patterns to novel forms.",
+    concepts: ["Morphology", "Productivity"],
+    href: "modules/word-structure/"
+  },
+  {
+    id: "sentence-structure",
+    sequence: 12,
+    shortTitle: "Sentence structure",
+    title: "Sentence Structure: Find the Ambiguity",
+    topic: "Syntax and constituency",
+    category: "structure-diversity",
+    status: "available",
+    description: "Build alternative structures, test constituents, and connect identical word sequences to different interpretations.",
+    concepts: ["Syntax", "Constituency"],
+    href: "modules/sentence-structure/"
+  },
+  {
+    id: "meaning-context",
+    sequence: 13,
+    shortTitle: "Meaning in context",
+    title: "Meaning in Context: Said or Implied?",
+    topic: "Semantics and pragmatics",
+    category: "communication-cognition",
+    status: "available",
+    description: "Separate entailment, presupposition, and implicature by testing what context allows speakers to cancel or imply.",
+    concepts: ["Semantics", "Pragmatics"],
+    href: "modules/meaning-context/"
   }
 ];
 

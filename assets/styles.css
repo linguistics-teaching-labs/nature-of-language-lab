@@ -352,6 +352,10 @@ h1, h2, h3 {
 .module-card[data-module="language-gender"] .module-number { background: #934628; }
 .module-card[data-module="digital-tone"] .module-number { background: #a45128; }
 .module-card[data-module="claim-evidence"] .module-number { background: #5b3c8a; }
+.module-card[data-module="speech-sounds"] .module-number { background: #176b87; }
+.module-card[data-module="word-structure"] .module-number { background: #b45327; }
+.module-card[data-module="sentence-structure"] .module-number { background: #6d4aa1; }
+.module-card[data-module="meaning-context"] .module-number { background: #17695d; }
 
 .module-card[data-status="proposed"] {
   box-shadow: 0 10px 28px rgba(16, 42, 67, 0.07);
