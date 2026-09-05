@@ -388,6 +388,8 @@ h1, h2, h3 {
 .skill-list {
   display: flex;
   flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
   gap: 0.4rem;
   margin: 1rem 0 1.2rem;
   padding: 0;
@@ -396,12 +398,14 @@ h1, h2, h3 {
 }
 
 .skill-list li {
+  align-self: flex-start;
   padding: 0.3rem 0.58rem;
   border: 1px solid var(--line);
   border-radius: 999px;
   color: var(--ink-soft);
   background: #f7fafc;
   font-size: 0.76rem;
+  line-height: 1.25;
 }
 
 .primary-action {
