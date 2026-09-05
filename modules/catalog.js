@@ -7,81 +7,105 @@ export const modules = [
     topic: "Change and evidence",
     category: "change-society",
     status: "available",
-    description: "Interrogate a deterioration claim, trace systematic changes, model social diffusion, and decide what the evidence actually warrants.",
-    concepts: ["Language change", "Social networks", "Claim evaluation"],
+    description: "Test claims of linguistic decline by tracing patterned change, modeling social diffusion, and distinguishing change from loss.",
+    concepts: ["Change", "Diffusion", "Evidence"],
     href: "modules/language-change/"
   },
   {
     id: "animal-communication",
     sequence: 2,
     shortTitle: "Animal communication",
-    title: "What Counts as Language? Human and Animal Communication",
+    title: "Animal Communication Evidence Lab",
     topic: "Communication systems",
     category: "communication-cognition",
     status: "proposed",
-    description: "Compare design features across human language and animal communication, then decide which similarities and differences the evidence supports.",
-    concepts: ["Design features", "Animal communication", "Comparative reasoning"],
+    description: "Compare human language and animal signaling through design features, then judge what the evidence can and cannot establish.",
+    concepts: ["Design features", "Signaling", "Comparison"],
     href: null
   },
   {
     id: "language-thought",
     sequence: 3,
     shortTitle: "Language and thought",
-    title: "Does Language Shape Thought?",
+    title: "Language and Thought: How Strong Is the Claim?",
     topic: "Language and cognition",
     category: "communication-cognition",
     status: "proposed",
     description: "Match claims about color, time, and grammatical categories to evidence, separating linguistic influence from linguistic determinism.",
-    concepts: ["Sapir–Whorf", "Categorization", "Causal claims"],
+    concepts: ["Relativity", "Categorization", "Causality"],
     href: null
   },
   {
     id: "language-comparison",
     sequence: 4,
     shortTitle: "Comparing languages",
-    title: "Are Some Languages Better Than Others?",
+    title: "How Languages Package Meaning",
     topic: "Structure and complexity",
     category: "structure-diversity",
     status: "proposed",
-    description: "Compare how languages package meaning across sound, word, and sentence structure without ranking one system as inherently better.",
-    concepts: ["Typology", "Complexity", "Structural gaps"],
+    description: "Compare how languages organize sounds, words, and sentences without ranking one system as inherently better.",
+    concepts: ["Typology", "Complexity", "Expression"],
     href: null
   },
   {
     id: "spelling-reform",
     sequence: 5,
     shortTitle: "Spelling reform",
-    title: "Should English Spelling Be Reformed?",
+    title: "Spelling Reform Sandbox",
     topic: "Writing systems",
     category: "change-society",
     status: "proposed",
-    description: "Test competing spelling reforms against pronunciation coverage, learnability, historical information, and implementation costs.",
-    concepts: ["Orthography", "Sound–symbol mapping", "Policy trade-offs"],
+    description: "Test spelling reforms against pronunciation coverage, dialect fairness, readability, morphology, and transition costs.",
+    concepts: ["Orthography", "Dialect fairness", "Trade-offs"],
     href: null
   },
   {
     id: "english-variation",
     sequence: 6,
     shortTitle: "English variation",
-    title: "Dialect, Accent, or “Just Slang”?",
+    title: "Dialect Rule Detective",
     topic: "Variation and ideology",
     category: "variation-identity",
     status: "proposed",
-    description: "Classify accent, dialect, variety, and slang; inspect patterned variation; and separate linguistic description from social evaluation.",
-    concepts: ["Dialect and accent", "Patterned variation", "Language ideology"],
+    description: "Identify rules in stigmatized varieties and separate linguistic description from social judgments about accents, dialects, and slang.",
+    concepts: ["Variation", "Dialect rules", "Ideology"],
     href: null
   },
   {
     id: "language-gender",
     sequence: 7,
     shortTitle: "Language and gender",
-    title: "Language and Gender: Form, Function, and Bias",
+    title: "Form, Function, and Gender Stereotypes",
     topic: "Identity and interpretation",
     category: "variation-identity",
     status: "proposed",
     description: "Interpret the same feature across contexts and examine how expectations about gender shape judgments about speakers.",
-    concepts: ["Form and function", "Gender ideology", "Listener perception"],
+    concepts: ["Form/function", "Gender ideology", "Perception"],
     href: null
+  },
+  {
+    id: "digital-tone",
+    sequence: 8,
+    shortTitle: "Digital tone",
+    title: "Digital Tone and Context Explorer",
+    topic: "Digital pragmatics",
+    category: "change-society",
+    status: "available",
+    description: "Test how punctuation, emoji, relationship, and platform context change the plausible interpretations of a short digital message.",
+    concepts: ["Pragmatics", "Digital cues", "Context"],
+    href: "modules/digital-tone/"
+  },
+  {
+    id: "claim-evidence",
+    sequence: 9,
+    shortTitle: "Claim and evidence",
+    title: "Claim and Evidence Inspector",
+    topic: "Critical reasoning",
+    category: "evidence-reasoning",
+    status: "available",
+    description: "Build and stress-test linguistic arguments by matching claims with measures, comparisons, alternatives, and warranted conclusions.",
+    concepts: ["Claims", "Evidence", "Inference"],
+    href: "modules/claim-evidence/"
   }
 ];
 
@@ -89,7 +113,8 @@ export const moduleCategories = [
   { id: "communication-cognition", label: "Communication & cognition" },
   { id: "structure-diversity", label: "Structure & diversity" },
   { id: "change-society", label: "Change, writing & society" },
-  { id: "variation-identity", label: "Variation, identity & ideology" }
+  { id: "variation-identity", label: "Variation, identity & ideology" },
+  { id: "evidence-reasoning", label: "Evidence & reasoning" }
 ];
 
 export const defaultModuleOrder = "sequence";

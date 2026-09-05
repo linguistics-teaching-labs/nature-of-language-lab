@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive lab for matching linguistic claims with evidence and warranted conclusions.">
+  <title>Claim and Evidence Inspector · Nature of Language Lab</title>
+  <link rel="stylesheet" href="../../assets/styles.css?v=20260905-3">
+  <link rel="stylesheet" href="../../assets/lab.css?v=20260905-3">
+  <link rel="stylesheet" href="../../assets/explorers.css?v=20260905-3">
+</head>
+<body class="lab-page">
+  <header class="site-header lab-header">
+    <a class="brand" href="../../" aria-label="Nature of Language Lab home"><span class="brand-mark" aria-hidden="true">NL</span><span>Nature of Language Lab</span></a>
+    <nav class="module-nav" data-module-nav data-root="../../" data-active="claim-evidence" aria-label="Module navigation"></nav>
+  </header>
+  <main class="lab-shell">
+    <aside class="lab-guide" aria-label="Activity guide">
+      <a class="back-link" href="../../"><span aria-hidden="true">←</span> All modules</a>
+      <p class="eyebrow">Critical reasoning</p>
+      <h1>Claim and Evidence Inspector</h1>
+      <p class="guide-intro">Build an argument whose conclusion is no stronger than its evidence.</p>
+      <nav class="step-nav" aria-label="Lab steps">
+        <a href="#unpack"><span>1</span> Unpack the claim</a><a href="#test"><span>2</span> Define the test</a><a href="#match"><span>3</span> Match evidence</a><a href="#stress"><span>4</span> Stress-test</a><a href="#conclude"><span>5</span> Calibrate</a>
+      </nav>
+      <details class="objectives"><summary>Learning objectives</summary><ul><li>Identify scope, outcome, and causal language in a claim.</li><li>Operationalize a claim with measures and comparisons.</li><li>Distinguish relevant evidence from illustration or opinion.</li><li>Consider alternatives before reaching a conclusion.</li></ul></details>
+    </aside>
+    <div class="lab-workspace">
+      <section class="lab-section" id="unpack" aria-labelledby="unpack-title">
+        <div class="section-heading"><span class="step-badge">Step 1</span><div><h2 id="unpack-title">Unpack the claim</h2><p>Select a course claim and identify what it asks the evidence to carry.</p></div></div>
+        <label class="field"><span>Claim set</span><select id="claim-picker"></select></label>
+        <blockquote class="claim-quote" id="claim-quote"></blockquote>
+        <div class="anatomy-grid" id="anatomy-grid"></div>
+      </section>
+      <section class="lab-section" id="test" aria-labelledby="test-title">
+        <div class="section-heading"><span class="step-badge">Step 2</span><div><h2 id="test-title">Define a fair test</h2><p>Choose one outcome, one comparison, and coverage proportionate to the claim.</p></div></div>
+        <div class="inspector-grid">
+          <label class="field"><span>Measure the outcome</span><select id="test-measure"></select></label>
+          <label class="field"><span>Make the comparison</span><select id="test-comparison"></select></label>
+          <label class="field"><span>Match the scope</span><select id="test-coverage"></select></label>
+        </div>
+        <button class="button primary" id="check-test" type="button">Inspect the test</button>
+        <div class="feedback-panel" id="test-feedback" role="status" aria-live="polite" hidden></div>
+      </section>
+      <section class="lab-section" id="match" aria-labelledby="match-title">
+        <div class="section-heading"><span class="step-badge">Step 3</span><div><h2 id="match-title">Match claim and evidence</h2><p>Select every item needed to evaluate the active claim—and only those items.</p></div></div>
+        <fieldset><legend>Evidence set</legend><div class="choice-grid" id="evidence-options"></div></fieldset>
+        <button class="button primary" id="check-evidence" type="button">Check the evidence set</button>
+        <div class="feedback-panel" id="evidence-feedback" role="status" aria-live="polite" hidden></div>
+      </section>
+      <section class="lab-section" id="stress" aria-labelledby="stress-title">
+        <div class="section-heading"><span class="step-badge">Step 4</span><div><h2 id="stress-title">Stress-test alternatives</h2><p>Check every explanation a strong design would need to address.</p></div></div>
+        <div class="choice-grid" id="alternative-options"></div>
+        <div class="confidence-card"><div class="confidence-heading"><strong>Argument confidence</strong><output id="confidence-output">90/100</output></div><div class="confidence-track"><div class="confidence-fill" id="confidence-fill"></div></div><p class="field-note" id="confidence-note"></p></div>
+      </section>
+      <section class="lab-section" id="conclude" aria-labelledby="conclude-title">
+        <div class="section-heading"><span class="step-badge">Step 5</span><div><h2 id="conclude-title">Calibrate the conclusion</h2><p>Choose the conclusion whose strength matches the possible evidence and remaining limits.</p></div></div>
+        <fieldset><legend>Warranted conclusion</legend><div class="choice-grid" id="conclusion-options"></div></fieldset>
+        <button class="button primary" id="check-conclusion" type="button">Evaluate the conclusion</button>
+        <div class="feedback-panel" id="conclusion-feedback" role="status" aria-live="polite" hidden></div>
+        <div class="exit-ticket"><p class="callout-label">Reusable inspection routine</p><h3>Scope → measure → comparison → alternatives → conclusion</h3><p>Apply the sequence whenever a linguistic claim moves from observation to explanation or evaluation.</p></div>
+        <details class="sources-card"><summary>Sources and scope notes</summary><div><ul><li>Toulmin, S. (1958). <cite>The Uses of Argument</cite>. Cambridge University Press.</li><li>National Academies of Sciences, Engineering, and Medicine (2019). <a href="https://doi.org/10.17226/25303"><cite>Reproducibility and Replicability in Science</cite></a>.</li></ul><p>The numerical confidence meter is a teaching heuristic, not a p-value, probability, or validated assessment score.</p></div></details>
+      </section>
+      <footer class="lab-footer"><div><p>Created and maintained by <a href="https://github.com/weilaiPhonetics">Wei Lai</a> and <a href="https://github.com/desenlin">Desen Lin</a> as an instructional project.</p><p class="footer-disclaimer">No responses are stored or transmitted. All interaction runs in the browser.</p></div><a href="https://github.com/linguistics-teaching-labs/nature-of-language-lab" target="_blank" rel="noopener">View source or contribute <span aria-hidden="true">↗</span></a></footer>
+    </div>
+  </main>
+  <script type="module" src="../../assets/module-nav.js?v=20260905-3"></script>
+  <script type="module" src="activity.js?v=20260905-3"></script>
+</body>
+</html>

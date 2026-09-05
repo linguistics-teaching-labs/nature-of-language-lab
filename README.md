@@ -21,7 +21,9 @@ The intended-use statement describes the scope of the activities; it does not na
 
 ## Module catalog
 
-### Available: Language Change: Evolution or Decay?
+### Available modules
+
+#### Language Change: Evolution or Decay?
 
 A five-step guided activity in which students:
 
@@ -33,14 +35,22 @@ A five-step guided activity in which students:
 
 The module uses a fictional innovation and synthetic network. It does not collect student writing, messages, or personal information.
 
+#### Digital Tone and Context Explorer
+
+A four-step activity for manipulating wording, punctuation, emoji, relationship, and channel; comparing context-dependent readings; selecting an appropriate research design; and calibrating a conclusion. Its visible percentages are transparent teaching weights, not empirical predictions.
+
+#### Claim and Evidence Inspector
+
+A five-step activity for unpacking the scope and causal language of course claims, defining a test, matching evidence, considering alternatives, and choosing a warranted conclusion. Its confidence meter is explicitly a reasoning heuristic rather than a statistical result.
+
 ### Proposed modules
 
-- **What Counts as Language? Human and Animal Communication** — compare design features across communication systems.
-- **Does Language Shape Thought?** — distinguish linguistic influence from linguistic determinism.
-- **Are Some Languages Better Than Others?** — compare structural strategies without ranking languages.
-- **Should English Spelling Be Reformed?** — evaluate orthographic reforms and their trade-offs.
-- **Dialect, Accent, or “Just Slang”?** — analyze patterned variation and social evaluation.
-- **Language and Gender: Form, Function, and Bias** — separate linguistic form, contextual function, and listener expectations.
+- **Animal Communication Evidence Lab** — compare design features across communication systems.
+- **Language and Thought: How Strong Is the Claim?** — distinguish linguistic influence from linguistic determinism.
+- **How Languages Package Meaning** — compare structural strategies without ranking languages.
+- **Spelling Reform Sandbox** — evaluate orthographic reforms and their trade-offs.
+- **Dialect Rule Detective** — analyze patterned variation and social evaluation.
+- **Form, Function, and Gender Stereotypes** — separate linguistic form, contextual function, and listener expectations.
 
 These cards describe the development roadmap. They are labeled **Proposed** on the public catalog and do not link to unfinished activities.
 
@@ -62,9 +72,9 @@ npm test
 
 ## Adapt the activity
 
-- Edit `modules/language-change/data.js` to revise cases, evidence choices, diagnoses, reasoning options, and references.
+- Edit a module's `data.js` to revise its cases, evidence choices, and feedback without changing interaction logic.
 - Edit `modules/language-change/simulation.js` to revise the transparent network-generation or adoption rules.
-- Edit `modules/language-change/index.html` to revise instructions and reflection questions.
+- Edit each module's `index.html` to revise instructions, learning objectives, and reflection questions.
 - Add one entry to `modules/catalog.js` when creating a new activity. The homepage and shared navigation both read from this catalog.
 
 Keep permanent titles and directory names topic-based rather than tied to a semester's module numbering. See [CONTRIBUTING.md](CONTRIBUTING.md) for the module conventions.
