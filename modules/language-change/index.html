@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A guided activity for evaluating claims that language change is linguistic deterioration.">
+  <title>Language Change: Evolution or Decay? · Nature of Language Lab</title>
+  <link rel="stylesheet" href="../../assets/styles.css?v=20260905-1">
+  <link rel="stylesheet" href="../../assets/lab.css?v=20260905-1">
+  <link rel="stylesheet" href="language-change.css?v=20260905-1">
+</head>
+<body class="lab-page">
+  <header class="site-header lab-header">
+    <a class="brand" href="../../" aria-label="Nature of Language Lab home">
+      <span class="brand-mark" aria-hidden="true">NL</span>
+      <span>Nature of Language Lab</span>
+    </a>
+    <nav class="module-nav" data-module-nav data-root="../../" data-active="language-change" aria-label="Module navigation"></nav>
+  </header>
+
+  <main class="lab-shell">
+    <aside class="lab-guide" aria-label="Activity guide">
+      <a class="back-link" href="../../"><span aria-hidden="true">←</span> All modules</a>
+      <p class="eyebrow">Change and evidence</p>
+      <h1>Language Change: Evolution or Decay?</h1>
+      <p class="guide-intro">Separate observable change from claims about linguistic decline.</p>
+      <nav class="step-nav" aria-label="Lab steps">
+        <a href="#claim"><span>1</span> Interrogate the claim</a>
+        <a href="#patterns"><span>2</span> Trace the patterns</a>
+        <a href="#diffusion"><span>3</span> Model diffusion</a>
+        <a href="#diagnose"><span>4</span> Diagnose the evidence</a>
+        <a href="#conclusion"><span>5</span> Reach a conclusion</a>
+      </nav>
+      <details class="objectives">
+        <summary>Learning objectives</summary>
+        <ul>
+          <li>Distinguish description from prescriptive judgment.</li>
+          <li>Recognize systematic linguistic change.</li>
+          <li>Explain one role of social networks in diffusion.</li>
+          <li>Distinguish change, variation, and endangerment.</li>
+          <li>Connect evidence to a warranted conclusion.</li>
+        </ul>
+      </details>
+    </aside>
+
+    <div class="lab-workspace">
+      <section class="lab-section" id="claim" aria-labelledby="claim-title">
+        <div class="section-heading">
+          <span class="step-badge">Step 1</span>
+          <div>
+            <h2 id="claim-title">Interrogate the claim</h2>
+            <p>Before collecting examples, decide what evidence the claim would require.</p>
+          </div>
+        </div>
+
+        <blockquote class="claim-card">“Young people and digital communication are making English worse.”</blockquote>
+        <div class="question-block">
+          <h3>Which evidence would be necessary to test this claim?</h3>
+          <p>Select every item that would be needed. Some other items may reveal attitudes without testing deterioration.</p>
+          <fieldset id="claim-needs" class="choice-list">
+            <legend class="sr-only">Evidence needed to test the claim</legend>
+          </fieldset>
+          <div class="action-row">
+            <button class="button primary" id="check-claim" type="button">Check the evidence plan</button>
+            <button class="button quiet" id="reset-claim" type="button">Reset</button>
+          </div>
+          <div id="claim-feedback" class="feedback-panel" role="status" aria-live="polite" hidden></div>
+        </div>
+      </section>
+
+      <section class="lab-section" id="patterns" aria-labelledby="patterns-title">
+        <div class="section-heading">
+          <span class="step-badge">Step 2</span>
+          <div>
+            <h2 id="patterns-title">Trace the patterns</h2>
+            <p>Compare forms and uses before deciding whether a change represents loss.</p>
+          </div>
+        </div>
+
+        <fieldset class="case-picker">
+          <legend>Choose a kind of change</legend>
+          <div id="case-tabs" class="case-tabs"></div>
+        </fieldset>
+
+        <article class="change-case" aria-live="polite">
+          <div class="case-heading">
+            <div>
+              <p id="case-kind" class="callout-label"></p>
+              <h3 id="case-title"></h3>
+            </div>
+            <span id="case-index" class="case-index"></span>
+          </div>
+          <p id="case-prompt" class="case-prompt"></p>
+          <div class="before-after" aria-label="Comparison across uses or periods">
+            <section>
+              <span id="earlier-label"></span>
+              <p id="earlier-text"></p>
+            </section>
+            <div class="change-arrow" aria-hidden="true">→</div>
+            <section>
+              <span id="later-label"></span>
+              <p id="later-text"></p>
+            </section>
+          </div>
+          <div class="inference-grid">
+            <div><span>Observation</span><p id="case-observation"></p></div>
+            <div><span>Supported inference</span><p id="case-inference"></p></div>
+            <div><span>Limit</span><p id="case-caution"></p></div>
+          </div>
+          <p id="case-source" class="source-line"></p>
+        </article>
+      </section>
+
+      <section class="lab-section" id="diffusion" aria-labelledby="diffusion-title">
+        <div class="section-heading">
+          <span class="step-badge">Step 3</span>
+          <div>
+            <h2 id="diffusion-title">Model social diffusion</h2>
+            <p>Test how a fictional variant moves through two simplified network structures.</p>
+          </div>
+        </div>
+
+        <div class="simulation-note">
+          <p class="callout-label">Transparent teaching model</p>
+          <p>Orange speakers use a fictional new form. In each round, another speaker adopts it when the selected share of their contacts already uses it. This is an illustration—not a forecast of any community.</p>
+        </div>
+
+        <div class="simulation-controls">
+          <label class="field">
+            <span>Network pattern</span>
+            <select id="network-pattern">
+              <option value="clustered">Close-knit clusters</option>
+              <option value="bridged">More cross-group bridges</option>
+            </select>
+          </label>
+          <label class="range-field" for="innovators">
+            <span><strong>Initial innovators</strong><output id="innovators-output" for="innovators">2</output></span>
+            <input id="innovators" type="range" min="1" max="6" value="2" step="1">
+          </label>
+          <label class="range-field" for="threshold">
+            <span><strong>Peer threshold</strong><output id="threshold-output" for="threshold">34%</output></span>
+            <input id="threshold" type="range" min="20" max="65" value="34" step="1">
+          </label>
+          <label class="range-field" for="rounds">
+            <span><strong>Interaction rounds</strong><output id="rounds-output" for="rounds">8</output></span>
+            <input id="rounds" type="range" min="1" max="12" value="8" step="1">
+          </label>
+        </div>
+
+        <div class="simulation-actions">
+          <button class="button primary" id="run-simulation" type="button">Run the model</button>
+          <button class="button secondary" id="compare-network" type="button">Compare the other network</button>
+        </div>
+
+        <div class="simulation-results">
+          <figure class="network-figure">
+            <div class="figure-heading">
+              <h3>Network after the final round</h3>
+              <span id="network-label"></span>
+            </div>
+            <svg id="network-graph" viewBox="0 0 620 360" role="img" aria-labelledby="network-title network-description">
+              <title id="network-title">Social network diffusion diagram</title>
+              <desc id="network-description">A network of speakers. Orange nodes have adopted the fictional form and navy nodes have not.</desc>
+            </svg>
+            <figcaption><span class="legend-key adopted"></span> Uses the new form <span class="legend-key retained"></span> Does not use it</figcaption>
+          </figure>
+          <div class="diffusion-summary">
+            <div class="result-number"><strong id="adoption-count">0 of 24</strong><span>speakers after the final round</span></div>
+            <div id="round-chart" class="round-chart" aria-label="Adoption by simulation round"></div>
+            <p id="simulation-interpretation" class="field-note" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <details class="prompt-card">
+          <summary>What does this model leave out?</summary>
+          <div>
+            <p>Real speakers differ in identity, mobility, prestige, linguistic repertoire, relationships, and willingness to adopt a form. Contact also changes over time.</p>
+            <p class="answer"><strong>Interpretation:</strong> A model can isolate a mechanism without reproducing the full social world. Its simplification limits the conclusion.</p>
+          </div>
+        </details>
+      </section>
+
+      <section class="lab-section" id="diagnose" aria-labelledby="diagnose-title">
+        <div class="section-heading">
+          <span class="step-badge">Step 4</span>
+          <div>
+            <h2 id="diagnose-title">Diagnose the evidence</h2>
+            <p>Language change, variation, and endangerment answer different questions.</p>
+          </div>
+        </div>
+
+        <div class="scenario-progress" aria-live="polite"><span id="scenario-number"></span><span id="scenario-dots" aria-hidden="true"></span></div>
+        <article class="scenario-card">
+          <p id="scenario-text"></p>
+          <fieldset>
+            <legend>What is the most precise diagnosis?</legend>
+            <div id="diagnostic-options" class="diagnostic-options"></div>
+          </fieldset>
+          <div class="action-row">
+            <button class="button primary" id="check-diagnosis" type="button">Check the diagnosis</button>
+            <button class="button secondary" id="next-scenario" type="button" hidden>Next case</button>
+          </div>
+          <div id="diagnosis-feedback" class="feedback-panel" role="status" aria-live="polite" hidden></div>
+        </article>
+      </section>
+
+      <section class="lab-section" id="conclusion" aria-labelledby="conclusion-title">
+        <div class="section-heading">
+          <span class="step-badge">Step 5</span>
+          <div>
+            <h2 id="conclusion-title">Reach a warranted conclusion</h2>
+            <p>Build a reasoning map. The strength of the conclusion depends on every connection.</p>
+          </div>
+        </div>
+
+        <div class="reasoning-map">
+          <div class="reasoning-node claim-node">
+            <span>Claim</span>
+            <p>“Young people and digital communication are making English worse.”</p>
+          </div>
+          <label class="reasoning-node">
+            <span>Evidence</span>
+            <select id="reasoning-evidence"></select>
+          </label>
+          <label class="reasoning-node">
+            <span>Criterion</span>
+            <select id="reasoning-criterion"></select>
+          </label>
+          <label class="reasoning-node">
+            <span>Alternative explanation</span>
+            <select id="reasoning-alternative"></select>
+          </label>
+          <label class="reasoning-node conclusion-node">
+            <span>Conclusion</span>
+            <select id="reasoning-conclusion"></select>
+          </label>
+        </div>
+        <button class="button primary" id="check-reasoning" type="button">Evaluate the reasoning map</button>
+        <div id="reasoning-feedback" class="feedback-panel" role="status" aria-live="polite" hidden></div>
+
+        <div class="exit-ticket">
+          <p class="callout-label">Exit question</p>
+          <h3>What additional evidence would change your confidence in the conclusion?</h3>
+          <p>Identify one measurable outcome, one comparison, and one limitation you would want a strong study to address.</p>
+        </div>
+
+        <details class="sources-card">
+          <summary>Sources and scope notes</summary>
+          <div id="source-notes"></div>
+        </details>
+      </section>
+
+      <footer class="lab-footer">
+        <div>
+          <p>Created and maintained by <a href="https://github.com/weilaiPhonetics">Wei Lai</a> and <a href="https://github.com/desenlin">Desen Lin</a> as an instructional project.</p>
+          <p class="footer-disclaimer">The historical examples and network model are compact teaching representations. They are not complete descriptions of language histories or communities.</p>
+        </div>
+        <a href="https://github.com/linguistics-teaching-labs/nature-of-language-lab" target="_blank" rel="noopener">View source or contribute <span aria-hidden="true">↗</span></a>
+      </footer>
+    </div>
+  </main>
+
+  <script type="module" src="../../assets/module-nav.js?v=20260905-1"></script>
+  <script type="module" src="activity.js?v=20260905-1"></script>
+</body>
+</html>

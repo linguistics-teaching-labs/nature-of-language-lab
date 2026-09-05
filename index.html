@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive, evidence-centered activities for critical thinking about language.">
+  <title>Nature of Language Lab</title>
+  <link rel="stylesheet" href="assets/styles.css?v=20260905-1">
+</head>
+<body class="collection-page">
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Nature of Language Lab home">
+      <span class="brand-mark" aria-hidden="true">NL</span>
+      <span>Nature of Language Lab</span>
+    </a>
+    <nav class="module-nav" data-module-nav data-root="./" aria-label="Module navigation"></nav>
+  </header>
+
+  <main class="collection-main">
+    <section class="collection-intro" aria-labelledby="page-title">
+      <p class="eyebrow">Open teaching modules</p>
+      <h1 id="page-title">Test familiar claims about how language works.</h1>
+      <p>Guided activities for evidence-based reasoning about language. Everything runs locally in the browser—no account, installation, or programming required.</p>
+    </section>
+
+    <div class="catalog-toolbar">
+      <p id="catalog-count" aria-live="polite"><strong id="module-count">1</strong> <span id="module-count-label">standalone activity</span></p>
+      <div class="catalog-controls">
+        <label class="module-search" for="module-search">Search
+          <input id="module-search" name="q" type="search" placeholder="Title or concept" autocomplete="off">
+        </label>
+        <label for="module-order">Arrange by
+          <select id="module-order" name="order"></select>
+        </label>
+      </div>
+    </div>
+
+    <div id="category-filters" class="category-filters" role="group" aria-label="Filter modules by subject"></div>
+
+    <section id="module-grid" class="module-grid" aria-label="Available modules" aria-live="polite">
+      <noscript>
+        <p><a href="modules/language-change/">Language Change: Evolution or Decay?</a></p>
+      </noscript>
+    </section>
+
+    <section class="collection-note" aria-labelledby="built-to-extend">
+      <h2 id="built-to-extend">Built to be extended</h2>
+      <p>Each activity is self-contained, with editable teaching text and data. Instructors can revise a case or add a module without maintaining a server.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-attribution">
+      <p>Created and maintained by <a href="https://github.com/weilaiPhonetics">Wei Lai</a> and <a href="https://github.com/desenlin">Desen Lin</a> as an instructional project.</p>
+      <p class="footer-disclaimer">Designed for instruction and exploratory analysis. Activities use simplified cases and teaching data and should not be treated as complete descriptions of languages or communities.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/linguistics-teaching-labs/nature-of-language-lab" target="_blank" rel="noopener">View source <span aria-hidden="true">↗</span></a>
+      <span>Code: MIT · Teaching content: CC BY 4.0</span>
+    </div>
+  </footer>
+  <script type="module" src="assets/site.js?v=20260905-1"></script>
+</body>
+</html>

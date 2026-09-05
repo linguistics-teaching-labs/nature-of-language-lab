@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use or adapt this instructional project, please cite it as below."
+title: "Nature of Language Lab"
+type: software
+authors:
+  - family-names: Lai
+    given-names: Wei
+  - family-names: Lin
+    given-names: Desen
+repository-code: "https://github.com/linguistics-teaching-labs/nature-of-language-lab"
+url: "https://linguistics-teaching-labs.github.io/nature-of-language-lab/"
+license: MIT
+version: 0.1.0
+date-released: 2026-09-05
+abstract: "Interactive, evidence-centered activities for critical thinking about language."
+keywords:
+  - linguistics education
+  - language change
+  - sociolinguistics
+  - social networks
+  - critical thinking
+  - language endangerment
+  - open educational resource
