@@ -154,6 +154,18 @@ export const modules = [
     description: "Separate entailment, presupposition, and implicature by testing what context allows speakers to cancel or imply.",
     concepts: ["Semantics", "Pragmatics"],
     href: "modules/meaning-context/"
+  },
+  {
+    id: "language-learning",
+    sequence: 14,
+    shortTitle: "Language learning",
+    title: "Language Learning: Evidence from Errors",
+    topic: "Language acquisition",
+    category: "communication-cognition",
+    status: "available",
+    description: "Use patterned errors and developmental sequences to test whether learners copy forms, guess randomly, or infer productive rules.",
+    concepts: ["Acquisition", "Error patterns"],
+    href: "modules/language-learning/"
   }
 ];
 

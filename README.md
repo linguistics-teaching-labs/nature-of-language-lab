@@ -21,7 +21,7 @@ The intended-use statement describes the scope of the activities; it does not na
 
 ## Module catalog
 
-All thirteen modules are available:
+All fourteen modules are available:
 
 - **[Language Change: Evolution or Decay?](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/language-change/)** — test deterioration claims, inspect patterned change, and model social diffusion.
 - **[Animal Communication Evidence Lab](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/animal-communication/)** — compare evidence for design features across communication systems.
@@ -36,6 +36,7 @@ All thirteen modules are available:
 - **[Word Structure: Build the Rule](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/word-structure/)** — infer morphological patterns and extend them to unfamiliar words.
 - **[Sentence Structure: Find the Ambiguity](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/sentence-structure/)** — connect constituency evidence and alternative structures to different readings.
 - **[Meaning in Context: Said or Implied?](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/meaning-context/)** — distinguish entailment, presupposition, implicature, and context-dependent functions.
+- **[Language Learning: Evidence from Errors](https://linguistics-teaching-labs.github.io/nature-of-language-lab/modules/language-learning/)** — use error patterns and developmental sequences to evaluate competing accounts of language learning.
 
 Every activity uses synthetic or compact teaching data, runs entirely in the browser, and does not collect student responses.
 

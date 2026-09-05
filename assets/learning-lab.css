@@ -1,0 +1,55 @@
+.utterance-card {
+  display: grid;
+  gap: .75rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: #f8fbfc;
+}
+
+.utterance-card > p { margin: 0; color: var(--ink-soft); }
+
+.utterance-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .75rem;
+}
+
+.utterance-example {
+  padding: .85rem;
+  border-top: 3px solid var(--teal);
+  background: #fff;
+}
+
+.utterance-example.target { border-top-color: var(--orange); }
+.utterance-example span { color: var(--ink-soft); font-size: .75rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.utterance-example strong { display: block; margin-top: .35rem; color: var(--navy); font-family: Georgia, "Times New Roman", serif; font-size: 1.15rem; }
+
+.stage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .75rem;
+  margin: 1rem 0;
+}
+
+.stage-grid label {
+  display: grid;
+  align-content: start;
+  gap: .5rem;
+  padding: .9rem;
+  border-top: 3px solid var(--teal);
+  background: #f7fafc;
+  color: var(--ink-soft);
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.stage-grid select { min-width: 0; min-height: 48px; padding: .55rem; border: 1px solid var(--line-dark); border-radius: 8px; background: #fff; color: var(--ink); font-size: .88rem; text-transform: none; }
+
+@media (max-width: 760px) {
+  .utterance-pair,
+  .stage-grid { grid-template-columns: 1fr; }
+}

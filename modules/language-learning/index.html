@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Use systematic language-learning errors to evaluate evidence for productive rules and developmental change.">
+  <title>Language Learning: Evidence from Errors · Nature of Language Lab</title>
+  <link rel="stylesheet" href="../../assets/styles.css?v=20260905-10">
+  <link rel="stylesheet" href="../../assets/lab.css?v=20260905-10">
+  <link rel="stylesheet" href="../../assets/explorers.css?v=20260905-10">
+  <link rel="stylesheet" href="../../assets/learning-lab.css?v=20260905-10">
+</head>
+<body class="lab-page">
+  <header class="site-header lab-header"><a class="brand" href="../../" aria-label="Nature of Language Lab home"><span class="brand-mark" aria-hidden="true">NL</span><span>Nature of Language Lab</span></a><nav class="module-nav" data-module-nav data-root="../../" data-active="language-learning" aria-label="Module navigation"></nav></header>
+  <main class="lab-shell">
+    <aside class="lab-guide" aria-label="Activity guide">
+      <a class="back-link" href="../../"><span aria-hidden="true">←</span> All modules</a>
+      <p class="eyebrow">Language acquisition</p>
+      <h1>Language Learning: Evidence from Errors</h1>
+      <p class="guide-intro">Treat non-adult forms as data, then test what kind of learning process could have produced them.</p>
+      <nav class="step-nav" aria-label="Lab steps"><a href="#diagnose"><span>1</span> Diagnose an error</a><a href="#sequence"><span>2</span> Trace development</a><a href="#hypothesis"><span>3</span> Test a hypothesis</a><a href="#conclude"><span>4</span> Build evidence</a></nav>
+      <details class="objectives"><summary>Learning objectives</summary><ul><li>Distinguish systematic generalization from isolated performance.</li><li>Interpret a U-shaped developmental pattern.</li><li>Compare imitation, random-error, and rule-learning accounts.</li><li>Design evidence for a warranted acquisition claim.</li></ul></details>
+    </aside>
+    <div class="lab-workspace">
+      <section class="lab-section" id="diagnose" aria-labelledby="diagnose-title">
+        <div class="section-heading"><span class="step-badge">Step 1</span><div><h2 id="diagnose-title">Read the error as evidence</h2><p>Use the surrounding observations before deciding what one non-adult form means.</p></div></div>
+        <label class="field"><span>Language-learning case</span><select id="error-picker"></select></label>
+        <div class="utterance-card"><p id="error-context"></p><div class="utterance-pair"><div class="utterance-example"><span>Learner form</span><strong id="learner-form"></strong></div><div class="utterance-example target"><span>Adult target</span><strong id="target-form"></strong></div></div></div>
+        <fieldset><legend>Strongest interpretation</legend><div class="choice-grid"><label class="option-card"><input type="radio" name="error-reading" value="productive-rule"><span><strong>Productive generalization</strong>A familiar rule has been extended beyond its adult domain.</span></label><label class="option-card"><input type="radio" name="error-reading" value="developing-pattern"><span><strong>Developing grammatical pattern</strong>Repeated behavior is systematic, although it does not yet match the adult pattern.</span></label><label class="option-card"><input type="radio" name="error-reading" value="insufficient"><span><strong>Insufficient evidence</strong>An isolated form may reflect performance or context rather than a stable rule.</span></label></div></fieldset>
+        <button class="button primary" id="check-error" type="button">Check the interpretation</button><div class="feedback-panel" id="error-feedback" role="status" aria-live="polite" hidden></div>
+      </section>
+      <section class="lab-section" id="sequence" aria-labelledby="sequence-title">
+        <div class="section-heading"><span class="step-badge">Step 2</span><div><h2 id="sequence-title">Reconstruct a learning path</h2><p>Correct performance need not improve in a straight line. Place the observations in developmental order.</p></div></div>
+        <div class="stage-grid"><label>Early<select id="stage-early" data-stage-select></select></label><label>Middle<select id="stage-middle" data-stage-select></select></label><label>Later<select id="stage-later" data-stage-select></select></label></div>
+        <button class="button primary" id="check-order" type="button">Check the sequence</button><div class="feedback-panel" id="order-feedback" role="status" aria-live="polite" hidden></div>
+        <p class="compact-note"><strong>Scope:</strong> This three-part sequence is a teaching model of U-shaped development, not a fixed timetable that every learner follows.</p>
+      </section>
+      <section class="lab-section" id="hypothesis" aria-labelledby="hypothesis-title">
+        <div class="section-heading"><span class="step-badge">Step 3</span><div><h2 id="hypothesis-title">Compare explanations</h2><p>Choose the account that explains novel forms, patterned errors, input, and change over time.</p></div></div>
+        <div class="table-wrap"><table class="evidence-table"><thead><tr><th>Observation</th><th>Why it matters</th></tr></thead><tbody id="hypothesis-evidence"></tbody></table></div>
+        <fieldset><legend>Best-supported hypothesis</legend><div class="choice-grid" id="hypothesis-options"></div></fieldset>
+        <button class="button primary" id="check-hypothesis" type="button">Evaluate the hypothesis</button><div class="feedback-panel" id="hypothesis-feedback" role="status" aria-live="polite" hidden></div>
+      </section>
+      <section class="lab-section" id="conclude" aria-labelledby="conclude-title">
+        <div class="section-heading"><span class="step-badge">Step 4</span><div><h2 id="conclude-title">Build a defensible evidence plan</h2><p>Select all and only the observations needed to infer a developing rule.</p></div></div>
+        <fieldset><legend>Evidence to collect</legend><div class="choice-grid" id="evidence-options"></div></fieldset>
+        <button class="button primary" id="check-evidence" type="button">Check the evidence plan</button><div class="feedback-panel" id="evidence-feedback" role="status" aria-live="polite" hidden></div>
+        <fieldset><legend>Best-supported conclusion</legend><div class="choice-grid" id="conclusion-options"></div></fieldset>
+        <button class="button primary" id="check-conclusion" type="button">Evaluate the conclusion</button><div class="feedback-panel" id="conclusion-feedback" role="status" aria-live="polite" hidden></div>
+        <div class="exit-ticket"><p class="callout-label">Exit question</p><h3>When does an error become evidence?</h3><p>Name the comparison that would help you distinguish a developing grammatical pattern from a temporary production lapse.</p></div>
+        <details class="sources-card"><summary>Sources and scope notes</summary><div><ul><li><a href="https://doi.org/10.1080/00437956.1958.11659661">Berko, J. (1958). The child's learning of English morphology.</a></li><li><a href="https://pubmed.ncbi.nlm.nih.gov/1518508/">Marcus, G. F., et al. (1992). Overregularization in language acquisition.</a></li><li>Brown, R. (1973). <cite>A First Language: The Early Stages</cite>.</li></ul><p>The activity uses compact, illustrative English data. Acquisition paths vary across children, structures, languages, interactional settings, and multilingual experience. Non-adult forms should not be used diagnostically outside a valid assessment.</p></div></details>
+      </section>
+      <footer class="lab-footer"><div><p>Created and maintained by <a href="https://github.com/weilaiPhonetics">Wei Lai</a> and <a href="https://github.com/desenlin">Desen Lin</a> as an instructional project.</p><p class="footer-disclaimer">No responses are stored or transmitted.</p></div><a href="https://github.com/linguistics-teaching-labs/nature-of-language-lab" target="_blank" rel="noopener">View source or contribute <span aria-hidden="true">↗</span></a></footer>
+    </div>
+  </main>
+  <script type="module" src="../../assets/module-nav.js?v=20260905-10"></script>
+  <script type="module" src="activity.js?v=20260905-10"></script>
+</body>
+</html>

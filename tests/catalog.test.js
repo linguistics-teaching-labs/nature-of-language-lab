@@ -2,10 +2,10 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { filterModules, getModules, moduleCategories, modules } from "../modules/catalog.js";
 
-test("catalog exposes thirteen available modules", () => {
-  assert.equal(modules.length, 13);
+test("catalog exposes fourteen available modules", () => {
+  assert.equal(modules.length, 14);
   assert.equal(modules[0].id, "language-change");
-  assert.equal(modules.filter(module => module.status === "available").length, 13);
+  assert.equal(modules.filter(module => module.status === "available").length, 14);
   assert.equal(modules.filter(module => module.status === "proposed").length, 0);
   for (const module of modules) {
     assert.ok(moduleCategories.some(category => category.id === module.category));
@@ -24,5 +24,6 @@ test("catalog filtering searches concepts and respects category", () => {
   assert.equal(filterModules({ category: "change-society" }).length, 3);
   assert.equal(filterModules({ category: "evidence-reasoning" }).length, 1);
   assert.equal(filterModules({ category: "structure-diversity" }).length, 4);
-  assert.deepEqual(getModules().map(module => module.sequence), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]);
+  assert.equal(filterModules({ category: "communication-cognition" }).length, 4);
+  assert.deepEqual(getModules().map(module => module.sequence), [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
 });
