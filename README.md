@@ -65,9 +65,27 @@ npm test
 
 Keep permanent titles and directory names topic-based rather than tied to a semester's module numbering. See [CONTRIBUTING.md](CONTRIBUTING.md) for the module conventions.
 
-## Citation
+## Cite this project
 
-Citation metadata is provided in [`CITATION.cff`](CITATION.cff). GitHub can generate APA and BibTeX formats from the repository's **Cite this repository** control.
+If you use or adapt the Nature of Language Lab in teaching, scholarship, or other published work, please use the following reference:
+
+> Lai, W., & Lin, D. (2026). *Nature of Language Lab* (Version 0.5.0) [Interactive teaching collection]. https://linguistics-teaching-labs.github.io/nature-of-language-lab/
+
+**BibTeX**
+
+```bibtex
+@misc{lai_lin_2026_nature_of_language_lab,
+  author       = {Lai, Wei and Lin, Desen},
+  title        = {Nature of Language Lab},
+  year         = {2026},
+  howpublished = {Interactive teaching collection, Version 0.5.0},
+  url          = {https://linguistics-teaching-labs.github.io/nature-of-language-lab/}
+}
+```
+
+The [`CITATION.cff`](CITATION.cff) file provides the canonical, machine-readable citation metadata used by GitHub and reference managers. When referring to a particular activity, include the module URL in addition to the lab citation above.
+
+Nature of Language Lab is part of the broader [Linguistics Teaching Labs](https://linguistics-teaching-labs.github.io/) collection.
 
 ## License
 
